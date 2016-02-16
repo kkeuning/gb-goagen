@@ -4,16 +4,19 @@ A gb plugin to run the goagen tool in a gb project.
 The goagen generator is used to working with a $GOPATH.
 
 ## Installation
-
-    go get github.com/kkeuning/gb-goagen/...
+```
+go get github.com/kkeuning/gb-goagen/...
+```
 
 ## Pre-reqs
+```
+go get github.com/constabulary/gb/...
+go get github.com/goadesign/goa/goagen
+```
 
-	go get github.com/constabulary/gb/...
-	go get github.com/goadesign/goa/goagen
-	
-This is based on Doug Clark's gb-run plug-in, tailored for running goagen specifically.
+This is based on Doug Clark's gb-run plug-in, but tailored for running goagen specifically.
 
+```
 Usage:
   gb goagen [arguments]
 
@@ -37,3 +40,4 @@ Getting help:
 	To see just the goagen help:
 		goagen
 		goagen -h
+```
