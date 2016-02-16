@@ -87,7 +87,7 @@ Runs as if you had executed the following:
 
 Getting help:
 
-	Sames as gb -h, shows gb help, NOT goagen help:
+	Same as gb -h, shows gb help, NOT goagen help:
 		gb goagen -h
 
 	To see this help together with goagen help:
