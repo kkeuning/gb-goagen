@@ -55,7 +55,7 @@ gb goagen [command] [arguments]
 
 This will NOT work currently:
 ```
-gb goagen --design=congo/design gen --pkg-path=github.com/goadesign/gorma -o $PWD/src/congo`
+gb goagen --design=congo/design gen --pkg-path=github.com/goadesign/gorma -o $PWD/src/congo
 ```
 
 But this equivalent works fine:
