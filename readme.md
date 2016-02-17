@@ -18,16 +18,20 @@ This is based on Doug Clark's gb-run plug-in, but tailored for running goagen sp
 
 ```
 Usage:
-  gb goagen [arguments]
+  gb goagen [command] [arguments]
 
-Either run gb-goagen from inside your desired output directory, or
-specify the output directory with -o.
+Run gb-goagen from the root of your gb project.
+Specify the output directory with -o.
 
-Example running from GB_PROJECT_DIR (see gb env):
+Example:
 	gb goagen bootstrap -d goa-adder/design -o $PWD/src/goa-adder
 
 Runs as if you had executed the following:
 	GOPATH=$GOPATH:$PWD goagen bootstrap -d goa-adder/design -o $PWD/src/goa-adder
+	
+Gorma example:
+
+	gb goagen gen --design=congo/design --pkg-path=github.com/goadesign/gorma -o $PWD/src/congo
 
 Getting help:
 
@@ -41,3 +45,16 @@ Getting help:
 		goagen
 		goagen -h
 ```
+
+Important!
+
+Current behavior of the plugin requires the gogen command to be specified before its arguments:
+`gb goagen [command] [arguments]`
+
+This will NOT work currently:
+`gb goagen --design=congo/design gen --pkg-path=github.com/goadesign/gorma -o $PWD/src/congo`
+
+But this equivalent works fine:
+`gb goagen gen --design=congo/design --pkg-path=github.com/goadesign/gorma -o $PWD/src/congo`
+
+
