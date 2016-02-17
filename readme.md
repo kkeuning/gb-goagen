@@ -49,12 +49,18 @@ Getting help:
 Important!
 
 Current behavior of the plugin requires the gogen command to be specified before its arguments:
-`gb goagen [command] [arguments]`
+```
+gb goagen [command] [arguments]
+```
 
 This will NOT work currently:
-`gb goagen --design=congo/design gen --pkg-path=github.com/goadesign/gorma -o $PWD/src/congo`
+```
+gb goagen --design=congo/design gen --pkg-path=github.com/goadesign/gorma -o $PWD/src/congo`
+```
 
 But this equivalent works fine:
-`gb goagen gen --design=congo/design --pkg-path=github.com/goadesign/gorma -o $PWD/src/congo`
+```
+gb goagen gen --design=congo/design --pkg-path=github.com/goadesign/gorma -o $PWD/src/congo
+```
 
 
